@@ -4,7 +4,7 @@ project(leveldb-download NONE)
 
 include(ExternalProject)
 ExternalProject_Add(
-  googletest
+  leveldbdl
   GIT_REPOSITORY git@github.com:google/leveldb.git
   GIT_TAG master
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/leveldb-src"
