@@ -37,7 +37,8 @@ endfunction(my_download_external_project)
 
 my_download_external_project("leveldb")
 add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/leveldb-src
-                 ${CMAKE_CURRENT_BINARY_DIR}/leveldb-build)
+                 ${CMAKE_CURRENT_BINARY_DIR}/leveldb-build
+                 EXCLUDE_FROM_ALL)
 include_directories(${CMAKE_CURRENT_BINARY_DIR}/leveldb-src/include)
 
 find_package(Threads REQUIRED)
